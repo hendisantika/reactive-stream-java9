@@ -1,6 +1,7 @@
 package com.hendisantika.reactive.stream.java9.tweet;
 
 import com.hendisantika.reactive.stream.java9.config.Property;
+import com.sun.tools.javac.comp.Flow;
 import twitter4j.*;
 import twitter4j.conf.ConfigurationBuilder;
 
@@ -8,7 +9,10 @@ import javax.annotation.PostConstruct;
 import javax.inject.Inject;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.concurrent.*;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.ScheduledExecutorService;
+import java.util.concurrent.TimeUnit;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 

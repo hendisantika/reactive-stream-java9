@@ -1,11 +1,11 @@
 package com.hendisantika.reactive.stream.java9.tweet;
 
 import com.hendisantika.reactive.stream.java9.model.Tweet;
+import com.sun.tools.javac.comp.Flow;
 import twitter4j.Status;
 
 import javax.inject.Inject;
 import java.util.UUID;
-import java.util.concurrent.Flow;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
