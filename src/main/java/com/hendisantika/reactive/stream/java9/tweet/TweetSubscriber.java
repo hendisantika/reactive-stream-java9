@@ -1,11 +1,13 @@
 package com.hendisantika.reactive.stream.java9.tweet;
 
 import com.hendisantika.reactive.stream.java9.model.Tweet;
-import com.sun.tools.javac.comp.Flow;
 import twitter4j.Status;
 
 import javax.inject.Inject;
 import java.util.UUID;
+import java.util.concurrent.Flow;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  * Created by IntelliJ IDEA.
@@ -24,6 +26,7 @@ public class TweetSubscriber implements Flow.Subscriber<Status> {
     private static final int SLEEP = 1000;
     private final String id = UUID.randomUUID().toString();
     private Flow.Subscription subscription;
+
     @Inject
     private Logger logger;
 
